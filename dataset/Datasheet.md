@@ -1,8 +1,8 @@
-# Theory-Grounded Measurement of U.S. Social Stereotypes in English Language Models
+# Multilingual large language models leak human stereotypes across language boundaries
 
-By: [Yang Trista Cao]`<ycao95@umd.edu>`, [Anna Sotnikova] `<asotniko@umd.edu>`, [Jieyu Zhao], [Linda Zou]`<lxzou@umd.edu>`, [Rachel Rudinger]`<rudinger@umd.edu>`, and [Hal Daumé III](http://hal3.name) `<hal3@umd.edu>`
+By: [Yang Trista Cao]`<ycao95@umd.edu>`, [Anna Sotnikova] `<aasotniko@gmail.com>`, [Jieyu Zhao], [Linda Zou]`<lxzou@umd.edu>`, [Rachel Rudinger]`<rudinger@umd.edu>`, and [Hal Daumé III](http://hal3.name) `<hal3@umd.edu>`
 
-As part of a study of stereotypes in English Language Models, we collected and annotated a dataset of people’s perceptions on different social groups in the United States. We call this dataset the **Crowdsourced U.S. Stereotypes Measured across Agency, Beliefs, and Communion**; what follows below is the [datasheet](https://arxiv.org/abs/1803.09010) describing this data. If you use this dataset, please acknowledge it by citing [the original paper](https://arxiv.org/abs/2206.11684):
+As part of a study of stereotypes in Multilingual Large Language Models, we collected and annotated a dataset of people’s perceptions on different social groups in the United States, Russia, China, and India. We call this dataset the **Crowdsourced Multilingual Stereotype Leakage Measured across Agency, Beliefs, and Communion**; what follows below is the [datasheet](https://arxiv.org/abs/1803.09010) describing this data. If you use this dataset, please acknowledge it by citing [the original paper](https://arxiv.org/abs/2206.11684):
 
 ```
 @inproceedings{}
@@ -19,20 +19,16 @@ As part of a study of stereotypes in English Language Models, we collected and a
 
 1. **Who created this dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?**
     
-    This dataset was created by Yang Trista Cao, Anna Sotnikova, Hal Daumé III, J Rachel Rudinger, and Linda Zou. At the time of creation, Cao and Sotnikova were graduate students at the University of Maryland (UMD), and Daumé, Rudinger, and Zou are Professors there.
+    This dataset was created by Yang Trista Cao, Anna Sotnikova, Jeiyu Zhao,  Linda X. Zou, Rachel Rudinger, and Hal Daumé III. At the time of creation, Cao and Sotnikova were graduate students at the University of Maryland (UMD), Zhao was a postdoc working with Daumé, and Daumé, Rudinger, and Zou are Professors there.
 
 
 1. **Who funded the creation of the dataset?** *(If there is an associated grant, please provide the name of the grantor and the grant name and number.)*
     
-    Funding for Cao and Daum\'e III was provided in part from the National Science Foundation project 2131508 and in part from University of Maryland foundation funds. Funding for Sotnikova was provided through the UMD AMSC program. Annotations were crowdsourced and funded through project 2131508.(The annotation was approved by the UMD IRB.)
-
+    Funding for Cao and Daum\'e III was provided in part from the National Science Foundation project 2131508 and 2229885, Zou was supported by the National Science Foundation project 2140987, and Zhao was awarded to the Computing Research Association for the CIFellows Project 2127309. (The annotation was approved by the UMD IRB.)
 
 1. **Any other comments?**
     
     None.
-
-
-
 
 
 ## Composition
