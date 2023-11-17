@@ -24,7 +24,7 @@ As part of a study of stereotypes in Multilingual Large Language Models, we coll
 
 1. **Who funded the creation of the dataset?** *(If there is an associated grant, please provide the name of the grantor and the grant name and number.)*
     
-    Funding for Cao and Daum\'e III was provided in part from the National Science Foundation project 2131508 and 2229885, Zou was supported by the National Science Foundation project 2140987, and Zhao was awarded to the Computing Research Association for the CIFellows Project 2127309. (The annotation was approved by the UMD IRB.)
+    Funding for Cao and Daumé III was provided in part from the National Science Foundation project 2131508 and 2229885, Zou was supported by the National Science Foundation project 2140987, and Zhao was awarded to the Computing Research Association for the CIFellows Project 2127309. (The annotation was approved by the UMD IRB.)
 
 1. **Any other comments?**
     
