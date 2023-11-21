@@ -36,7 +36,7 @@ As part of a study of stereotypes in Multilingual Large Language Models, we coll
 
 1. **What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)?** *(Are there multiple types of instances (e.g., movies, users, and ratings; people and interactions between them; nodes and edges)? Please provide a description.)*
     
-    The dataset contains the following files: codes to run model's measurements(to be updated), aggregated scores per language, annotators demographics per language (to be updated), and full data scores per language. 
+    The dataset contains the following files: codes to run model's measurements(to be updated), aggregated scores per language, annotators demographics per language, and full data scores per language. 
 
 In the aggregated scores file, each social group has scores for all 32 traits (16 trait pairs). For more details on groups and traits, please, see the paper. Each score is an average across all annotations per trait per group.
 
