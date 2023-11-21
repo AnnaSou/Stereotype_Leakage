@@ -2,7 +2,7 @@
 
 By: [Yang Trista Cao]`<ycao95@umd.edu>`, [Anna Sotnikova] `<aasotniko@gmail.com>`, [Jieyu Zhao], [Linda X. Zou]`<lxzou@umd.edu>`, [Rachel Rudinger]`<rudinger@umd.edu>`, and [Hal Daumé III](http://hal3.name) `<hal3@umd.edu>`
 
-As part of a study of stereotypes in Multilingual Large Language Models, we collected and annotated a dataset of people’s perceptions on different social groups in the United States, Russia, China, and India. We call this dataset the **Crowdsourced Multilingual Stereotype Leakage Measured across Agency, Beliefs, and Communion**; what follows below is the [datasheet](https://arxiv.org/abs/1803.09010) describing this data. If you use this dataset, please acknowledge it by citing [the original paper](https://arxiv.org/abs/2206.11684):
+As part of a study of stereotypes in Multilingual Large Language Models, we collected and annotated a dataset of people’s perceptions on different social groups in the United States, Russia, China, and India. We call this dataset the **Crowdsourced Multilingual Stereotype Leakage Measured across Agency, Beliefs, and Communion**; what follows below is the [datasheet](https://arxiv.org/abs/1803.09010) describing this data. If you use this dataset, please acknowledge it by citing [the original paper](https://arxiv.org/):
 
 ```
 @inproceedings{}
@@ -36,19 +36,19 @@ As part of a study of stereotypes in Multilingual Large Language Models, we coll
 
 1. **What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)?** *(Are there multiple types of instances (e.g., movies, users, and ratings; people and interactions between them; nodes and edges)? Please provide a description.)*
     
-    The dataset contains three files: aggregated scores, annotators demographics, and full data. 
+    The dataset contains the following files: codes to run model's measurements(to be updated), aggregated scores per language, annotators demographics per language (to be updated), and full data scores per language. 
 
-In the aggregated scores file, each social group has scores for all 16 trait pairs. For more details on groups and trait pair, please, see the paper. Each score is an average across all annotations per trait pair per group.
+In the aggregated scores file, each social group has scores for all 32 traits (16 trait pairs). For more details on groups and traits, please, see the paper. Each score is an average across all annotations per trait per group.
 
-In the demographic data, we have demographic information such as gender, age, education, race, state where the respondent currently lives, number of years lived in that states, and the territory type (urban or rural). In total, we have demographic information for 133 annotators. Please, note that annotators IDs were assigned at random and are not supposed to be used for getting relations between the annotators answers and their demographics.
+In the demographic data, we have demographic information such as gender, age, education, and, for all languages except English, how frequently this person watch American news/social media. We collected annotations from 151 annotators, who passed the quality checks. We had 34 participants for the English language, 36 for Russian, 41 for Chinese, and 40 for Hindi. Please, note that annotators IDs were assigned at random and are not supposed to be used for getting relations between the annotators answers and their demographics.
 
 
-In full data file, we have 133 annotators and theirs annotations for 4 social groups. 4 social groups were randomly sampled from the list of 26 social groups until every group got 20 annotations. For each social groups there are scores for 16 trait pairs. Scores are from 0 to 100, where 0 means that left trait is applicable, while 100 means that the right trait is applicable to the social group. Score of 50 means neutral. For instance score  of 10 for the pair poor-wealthy for some social group would mean that this social group vowed as poor.
+Scores in the full data files are organized as follows.There are three types of groups: shared group/shared stereotype, share group/ non-shared stereotype, and non-shared group/non-shared stereotype. For the first two types of groups, we have at least 5 annotations per group. For the last type, in the naitive language we have at least 5 annotations per group, while in other languages, the number of annotation is not defined. For each social groups there are scores for 16 trait pairs. Scores are from -50 to 50, where -50 means that left trait is applicable, while 50 means that the right trait is applicable to the social group. Score of 0 means neutral. 
 
 
 2. **How many instances are there in total (of each type, if appropriate)?**
     
-    In total, the dataset contains annotations from 133 annotators. Consequently, we have 133 annotators in full data file, and 133 demographic records in annotators demographics file. In the aggregated scores, we have scores for all 16 trait pairs for all 26 single groups.
+    In total, the dataset contains annotations from 151 annotators. Consequently, we have 34 participants for the English language, 36 for Russian, 41 for Chinese, and 40 for Hindi in full data files and in aggregated scores files. 
 
 3. **Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?** *(If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (e.g., geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (e.g., to cover a more diverse range of instances, because instances were withheld or unavailable).)*
     
@@ -57,7 +57,7 @@ In full data file, we have 133 annotators and theirs annotations for 4 social gr
 
 4. **What data does each instance consist of?** *(``Raw'' data (e.g., unprocessed text or images)or features? In either case, please provide a description.)*
     
-    In case of the aggregated data, each instance contains scores per trait pair per social group. In case of the full data, each instance represents one annotator and his/her scores for each of 16 trait pairs for four annotated groups. For the demographic data, this is the information provided by the annotators. Please, note that some annotators may not provide some information about themselves.
+    In case of the aggregated data, each instance contains scores per trait per social group. In case of the full data, each instance represents one annotator and his/her scores for each of 16 trait pairs for four annotated groups. For the demographic data, this is the information provided by the annotators. Please, note that some annotators may not provide some information about themselves.
 
 
 5. **Is there a label or target associated with each instance? If so, please provide a description.**
