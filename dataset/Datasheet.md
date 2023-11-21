@@ -57,14 +57,12 @@ Scores in the full data files are organized as follows.There are three types of 
 
 4. **What data does each instance consist of?** *(``Raw'' data (e.g., unprocessed text or images)or features? In either case, please provide a description.)*
     
-    In case of the aggregated data, each instance contains scores per trait per social group. In case of the full data, each instance represents one annotator and his/her scores for each of 16 trait pairs for four annotated groups. For the demographic data, this is the information provided by the annotators. Please, note that some annotators may not provide some information about themselves.
+    In case of the aggregated data, each instance contains scores per trait per social group. In case of the full data, each instance represents one annotator and his/her scores for each of 16 trait pairs for the groups that they annotated. For the demographic data, this is the information provided by the annotators. Please, note that some annotators may not provide some information about themselves.
 
 
 5. **Is there a label or target associated with each instance? If so, please provide a description.**
     
-    In the full data file, all instances are identified by annotator’s IDs.
-In the aggregated data file, each instance is presented by aggregated scores for 16 trait pairs (please, see details in the paper).
-In the demographic data, as in the full data instance is identified by annotator’s IDs. However, these ID do not correspond to the full data IDs. This is done in order to avoid potential harms of misinterpretation of scores based on annotator’s demographics.
+    In the full data file, all instances are identified by annotator’s IDs. In the aggregated data file, each instance is presented by aggregated scores for 32 trait (please, see details in the paper). In the demographic data, as in the full data instance is identified by annotator’s IDs. However, these ID do not correspond to the full data IDs. This is done in order to avoid potential harms of misinterpretation of scores based on annotator’s demographics.
 
 6. **Is any information missing from individual instances?** *(If so, please provide a description, explaining why this information is missing (e.g., because it was unavailable). This does not include intentionally removed information, but might include, e.g., redacted text.)*
     
@@ -73,7 +71,7 @@ In the demographic data, as in the full data instance is identified by annotator
 
 7. **Are relationships between individual instances made explicit (e.g., users' movie ratings, social network links)?** *( If so, please describe how these relationships are made explicit.)*
     
-  No. Crowd workers did the annotation task independently. Each crowd worker annotated four social groups.
+  No. Crowd workers did the annotation task independently. 
 
 8. **Are there recommended data splits (e.g., training, development/validation, testing)?** *(If so, please provide a description of these splits, explaining the rationale behind them.)*
     
@@ -97,7 +95,7 @@ In the demographic data, as in the full data instance is identified by annotator
 
 12. **Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?** *(If so, please describe why.)*
     
-   We present scores for 16 trait pairs for a variety of social groups, these scores might present certain groups not in the complimentary way. This potentially might be harmful to representatives of these social groups.
+   We present scores for 32 trait for a variety of social groups, these scores might present certain groups not in the complimentary way. This potentially might be harmful to representatives of these social groups.
 
 13. **Does the dataset relate to people?** *(If not, you may skip the remaining questions in this section.)*
     
@@ -105,7 +103,7 @@ In the demographic data, as in the full data instance is identified by annotator
 
 14. **Does the dataset identify any subpopulations (e.g., by age, gender)?** *(If so, please describe how these subpopulations are identified and provide a description of their respective distributions within the dataset.)*
     
-   We collect annotations for 26 social groups, each social group has 20 annotations from different crowd workers.
+   We collect annotations for 30 social groups.
 
 15. **Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?** *(If so, please describe how.)*
     
@@ -146,11 +144,11 @@ In the demographic data, as in the full data instance is identified by annotator
 
 1. **Over what timeframe was the data collected?** *(Does this timeframe match the creation timeframe of the data associated with the instances (e.g., recent crawl of old news articles)?  If not, please describe the timeframe in which the data associated with the instances was created.)*
     
-    The dataset was collected in the Fall of 2021.
+    The dataset was collected in the Fall of 2022.
 
 1. **Were any ethical review processes conducted (e.g., by an institutional review board)?** *(If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.)*
     
-    Data collection process was approved by the University of Maryland IRB. Title: [1724519-1] Assessing and measuring multilingual and cross-culture stereotypes in language technology systems.
+    Data collection process was approved by the University of Maryland IRB. Title: [1724519-3] Assessing and measuring multilingual and cross-culture stereotypes in language technology systems.
 
 1. **Does the dataset relate to people?** *(If not, you may skip the remaining questions in this section.)*
     
@@ -215,7 +213,7 @@ In the demographic data, as in the full data instance is identified by annotator
 
 1. **Has the dataset been used for any tasks already?** *(If so, please provide a description.)*
     
-    The dataset has been used to study stereotypical associations in English language models.
+    The dataset has been used to study stereotypical associations in multilingual large language models.
 
 1. **Is there a repository that links to any or all papers or systems that use the dataset?** *(If so, please provide a link or other access point.)*
     
@@ -224,14 +222,13 @@ In the demographic data, as in the full data instance is identified by annotator
 
 1. **What (other) tasks could the dataset be used for?**
     
-    The dataset could be used for studying stereotypes in language models. 
+    The dataset could be used for studying stereotypes in language models in English, Russian, Chinese, and Hindi. 
 
 
 1. **Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?** *(For example, is there anything that a future user might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other undesirable harms (e.g., financial harms, legal risks)  If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?)*
     
     
-    This dataset has a few limitations that should be considered before usage. First, the dataset is limited to English and U.S. social stereotypes. Second, our results are likely affected by reporting bias and by a defaulting effect where, when people say men they may actually mean cis straight white men, because the defaults go unremarked.
-In addition, the collected data may be affected by social desirability bias, which refers to people's tendency to respond in socially acceptable ways, though all the annotation activities are anonymous. Third, asking survey questions also raises the possibility of this work inadvertently reinforcing stereotypes in participants.
+    This dataset has several limitations. First, stereotypes were selected based on the ABC model, which was developed and tested using U.S. and German stereotypes. We translated our surveys into the other languages but this might result in patterns that better reflect Anglocentric stereotypes than other stereotypes. In our study, we try to control the influence of the U.S. culture by asking crowd workers how frequently they read U.S. social media. We see that on average 39% of respondents in Russia, China, and India read the media. This American cultural dominance might affect the collected data as these data may not fully capture the range of stereotypes typical for these cultures. In addition, we have language-culture limitations as English language survey results only apply to the U.S., Russian to Russia, Chinese to China, and Hindi to India. Lastly, while we indirectly consider culture through survey results on associations, we do not measure or account for culture in a comprehensive manner. 
 
 
 1. **Are there tasks for which the dataset should not be used?** *(If so, please provide a description.)*
@@ -255,12 +252,12 @@ In addition, the collected data may be affected by social desirability bias, whi
 
 1. **How will the dataset will be distributed (e.g., tarball  on website, API, GitHub)?** *(Does the dataset have a digital object identifier (DOI)?)*
     
-    The dataset is free for download at https://github.com/TristaCao/U.S_Stereotypes.
+    The dataset is free for download at [https://github.com/AnnaSou/Stereotype_Leakage](https://github.com/AnnaSou/Stereotype_Leakage).
 
 
 1. **When will the dataset be distributed?**
     
-    The dataset is distributed as of May 2022 in its first version.
+    The dataset is distributed as of November 2023 in its first version.
 
 
 1. **Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?** *(If so, please describe this license and/or ToU, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated with these restrictions.)*
@@ -291,7 +288,7 @@ In addition, the collected data may be affected by social desirability bias, whi
 
 1. **Who is supporting/hosting/maintaining the dataset?**
     
-    Trista Cao and Anna Sotnikova are maintaining. Cao is hosting on github.
+   Anna Sotnikova and Yang Trista Cao are maintaining. Sotnikova is hosting on github.
 
 
 1. **How can the owner/curator/manager of the dataset be contacted (e.g., email address)?**
